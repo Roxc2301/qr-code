@@ -6,26 +6,22 @@ body{
     text-align: center;
     font-family: 'Outfit', sans-serif;
 }
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    }
 div{
     border-radius: 10px;
     border-width: 1px;
 }
 .container{
-    position: absolute;
-    top: 25%;
-    left: 35%;
     background-color:hsl(0, 0%, 100%);
     padding: 20px;
     box-shadow: 8px 8px 10px 0px hsl(212, 45%, 89%),
      -5px -5px 5px 0px hsl(212, 45%, 89%),
     5px 5px 15px 0px rgb(121, 121, 160);
     width: 300px;
-}
-@media (max-width: 767px) {
-    /* Styles for mobile devices */
-    .container {
-        left: 5vw;
-    }
 }
 #image-container img{
     max-width:100%;
